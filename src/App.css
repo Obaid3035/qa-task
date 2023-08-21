@@ -1,0 +1,109 @@
+.form_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+}
+
+textarea {
+    height: 300px;
+}
+
+textarea, input {
+    width: 500px;
+    border-radius: 20px;
+    max-width: 100%;
+    padding: 20px;
+    background: 0 0 rgba(0, 0, 0, 0.07);
+    font-family: sans-serif;
+    border-color: #FFFFFF #FFFFFF;
+    border-width: medium 1px 1px medium;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.12) inset;
+    color: #555555;
+    font-size: 24px;
+    line-height: 1.4em;
+    transition: background-color 0.5s ease 0s;
+    resize: none;
+}
+
+textarea::placeholder, input::placeholder {
+    font-weight: 500;
+    opacity: 0.4;
+    color: black;
+}
+
+
+input {
+    border: none;
+    margin-top: 20px;
+}
+
+textarea:focus, input:focus {
+    background: 0 0 #FFFFFF;
+    outline-width: 0;
+}
+
+
+button {
+    background: #34B3B5;
+    overflow: hidden;
+    border: none;
+    border-radius: 20px;
+    font-size: 22px;
+    width: 200px;
+    height: 70px;
+    margin-top: 22px;
+    color: white;
+    cursor: pointer;
+}
+
+
+@media (max-width: 768px) {
+    .form_container {
+        padding: 20px;
+    }
+
+    textarea,
+    input {
+        width: 100%;
+        max-width: 100%;
+        font-size: 18px;
+    }
+
+    button {
+        width: 100%;
+        font-size: 18px;
+    }
+}
+
+.error_message {
+    color: red;
+    font-size: 16px;
+    margin-top: 5px;
+}
+
+button:hover {
+    background-color: black;
+    transition: all 0.6s ease-out;
+}
+
+p {
+    background: black;
+    border-radius: 20px;
+    font-size: 20px;
+    color: #555555;
+    padding: 20px;
+    text-align: left;
+    border-width: medium 1px 1px medium;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.12) inset;
+    background: 0 0 rgba(0, 0, 0, 0.07);
+}
+.answer_inactive {
+    transition: background-color 0.5s ease 0s;
+}
+
+.answer_active {
+    background: 0 0 #FFFFFF;
+    outline-width: 0;
+}
